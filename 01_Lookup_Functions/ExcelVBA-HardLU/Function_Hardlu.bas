@@ -1,4 +1,5 @@
 Attribute VB_Name = "Function_Hardlu"
+Option Explicit
 Option Compare Text
 
 '=======================================================
@@ -12,7 +13,7 @@ Function hardlu(arg As Variant, InputRange As range, outputrange As range) As Va
 '=======================================================
 Dim i, j As Double
 Dim numrows, numcols, numcount As Double
-Dim valrange, lprev, Temp As Variant
+Dim current, lprev, Temp, valrange As Variant
 
 numrows = InputRange.Rows.Count
 numcols = InputRange.Columns.Count
